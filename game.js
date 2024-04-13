@@ -59,8 +59,8 @@ function playGame() {
     while (!winner && !checkTie(board)) {
         printBoard(board);
         console.log(`Player ${currentPlayer}'s turn`);
-        let row = prompt('Enter row (0, 1, or 2): ');
-        let col = prompt('Enter column (0, 1, or 2): ');
+        const row = prompt('Enter row (0, 1, or 2): ');
+        const col = prompt('Enter column (0, 1, or 2): ');
 
         if (board[row][col] === '') {
             board[row][col] = currentPlayer;
